@@ -12,5 +12,8 @@ module Qiitakun
       json = RestClient.get("#{API_ENDPOINT}/items", "Authorization" => "Bearer #{@qiita_token}", accept: :json).body
       JSON.parse(json, symbolize_names: true).map { |repository| repository[:title] }
     end
+
+    def good_feature
+    end
   end
 end
