@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "qiitakun"
+
+Qiitakun::CLI.start(ARGV)
